@@ -15,11 +15,12 @@ public class RunnerClass {
 		laps.add(new Laptop("Acer", 4, 400));
 
 		// Based on Ram
+		System.out.println("============== Based on Ram=====================");
 		Collections.sort(laps);
 
 		laps.stream().forEach((l) -> System.out.println(l));
 
-		System.out.println("===================================");
+		System.out.println("=================based price value==================");
 
 		// based price value
 		Collections.sort(laps, new Comparator<Laptop>() {
@@ -32,12 +33,11 @@ public class RunnerClass {
 					return -1;
 				}
 			}
-
 		});
 
 		laps.forEach(System.out::println);
 
-		System.out.println("=========================================");
+		System.out.println("====================same reverse order=====================");
 		// same reverse order
 		Collections.sort(laps, (o1, o2) -> {
 			if (o1.getPrice() < o2.getPrice()) {
@@ -45,6 +45,15 @@ public class RunnerClass {
 			} else {
 				return -1;
 			}
+		});
+
+		laps.forEach(l -> System.out.println(l));
+
+		System.out.println("==================== Sort by name =====================");
+
+		Collections.sort(laps, (o1, o2) -> {
+
+			return o1.getLaptopName().compareTo(o2.getLaptopName());
 		});
 
 		laps.forEach(l -> System.out.println(l));

@@ -13,8 +13,7 @@ public class ExerciseProblemWithoutLambda {
 		List<PersonPOJO> people = Arrays.asList(new PersonPOJO("deepak", "varma", 25),
 				new PersonPOJO("Manik", "sharan", 26), new PersonPOJO("Rohit", "Cholleti", 29),
 				new PersonPOJO("Siddu", "Roy", 27));
-		
-		
+
 		System.out.println("============Java7===============");
 
 		// sort the People with Lastname
@@ -33,16 +32,14 @@ public class ExerciseProblemWithoutLambda {
 			System.out.println(p);
 		}
 
-		// Print the person whose name lastname starts with 'V'
+		// Print the person whose name lastname starts with 'S'
 
 		for (PersonPOJO p : people) {
 			if (p.getLastName().startsWith("s"))
 				System.out.println(p);
 		}
-		
+
 		System.out.println("============Java7===============");
-
-
 
 	}
 

@@ -26,6 +26,10 @@ public class Books {
 		this.website = website;
 	}
 
+	public Books() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getIsbn() {
 		return isbn;
 	}

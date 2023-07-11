@@ -56,15 +56,20 @@ public class DemoOne {
 		list.add("five");
 
 		System.out.println("-------Before sorting-------");
-		for (String daa : list) {
-			System.out.println(daa);
-		}
+//		for (String daa : list) {
+//			System.out.println(daa);
+//		}
+		
+		list.forEach(lis -> System.out.println(lis));
+		
 		Collections.sort(list);
 
 		System.out.println("-------After sorting-------");
-		for (String daa : list) {
-			System.out.println(daa);
-		}
+//		for (String daa : list) {
+//			System.out.println(daa);
+//		}
+		
+		list.stream().forEach(lis -> System.out.println(lis));
 
 		int index = Collections.binarySearch(list, "four");
 

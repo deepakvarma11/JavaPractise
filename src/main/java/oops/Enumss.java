@@ -3,24 +3,24 @@ package oops;
 enum Mobile {
 
 	APPLE(100), SAMSUNG, HTC(90);
-	
+
 	int price;
-	
+
 	public int getPrice() {
 		return price;
 	}
-	
-	Mobile(int p) {  // Parameterized constructor
+
+	Mobile(int p) { // Parameterized constructor
 		price = p;
 	}
-	
-	Mobile(){
+
+	Mobile() {
 		price = 80;
 	}
 
 	/*
-	 * enums are like constants which value will never changes, Like Pie = 3.14
-	 * we can also define price variables and methods inside enums
+	 * enums are like constants which value will never changes, Like Pie = 3.14 we
+	 * can also define price variables and methods inside enums
 	 */
 }
 
@@ -30,9 +30,9 @@ enum Mobile {
 //	static final Mobile SAMSUNG = new Mobile();
 //	static final Mobile HTC = new Mobile();
 
-	/*
-	 * Above enum and this class behaves same way
-	 */
+/*
+ * Above enum and this class behaves same way
+ */
 //}
 
 public class Enumss {
@@ -48,19 +48,19 @@ public class Enumss {
 
 	public static void main(String[] args) {
 		System.out.println(Mobile.APPLE);
-		
-		//We can set price for each mobile as well
+
+		// We can set price for each mobile as well
 		System.out.println(Mobile.SAMSUNG.getPrice());
 		System.out.println(Mobile.APPLE.getPrice());
 		System.out.println(Mobile.HTC.getPrice());
-		
-		//We can also check the order by Ordinals
+
+		// We can also check the order by Ordinals
 		System.out.println(Mobile.APPLE.ordinal());
-		
-		//We can also print all the enums in order wise
+
+		// We can also print all the enums in order wise
 		Mobile mobile[] = Mobile.values();
-		
-		for(Mobile mm: mobile) {
+
+		for (Mobile mm : mobile) {
 			System.out.println(mm);
 		}
 

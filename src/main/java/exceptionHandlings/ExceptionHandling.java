@@ -22,7 +22,7 @@ public class ExceptionHandling {
 		try {
 			int j = 8 / 0;
 		} catch (ArithmeticException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			System.out.println(e.getMessage());
 			System.out.println("Hey its an error");
 		}

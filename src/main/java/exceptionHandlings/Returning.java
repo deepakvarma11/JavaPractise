@@ -10,7 +10,7 @@ public class Returning {
 		
 		try {
 			System.out.println(8/2);
-			return true;
+			return false;
 			
 		}catch (Exception e) {
 			System.out.println("Catch block");

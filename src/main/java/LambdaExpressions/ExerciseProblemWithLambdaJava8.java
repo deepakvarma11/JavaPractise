@@ -26,10 +26,12 @@ public class ExerciseProblemWithLambdaJava8 {
 		// 3 Print the person whose name lastname starts with 'V'
 
 		Stream<PersonPOJO> st2 = people.stream();
-		st2.forEach((p) -> {
-			if (p.getLastName().startsWith("v"))
-				System.out.println(p);
-		});
+//		st2.forEach((p) -> {
+//			if (p.getLastName().startsWith("v"))
+//				System.out.println(p);
+//		});
+
+		st2.filter(p -> p.getLastName().startsWith("v")).forEach(System.out::println);
 
 	}
 

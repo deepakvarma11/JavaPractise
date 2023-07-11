@@ -25,7 +25,7 @@ public class DemoException {
 			System.out.println(k);
 			
 			int[] a = new int[3];
-//			System.out.println(a[8]);
+			System.out.println(a[8]);
 			
 		} catch (IOException e) {
 			System.out.println(e.getMessage());

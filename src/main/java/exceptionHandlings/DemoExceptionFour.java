@@ -24,6 +24,8 @@ public class DemoExceptionFour {
 		} finally {
 			s.close();
 		}
+		
+		System.out.println("sdfghjkl");
 
 	}
 }

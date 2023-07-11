@@ -10,14 +10,19 @@ public class Java8ExceptionOne {
 
 		int key = 0;
 
-		Perform(nums, key, (value, k) -> System.out.println(value / k));
+		try {
+			Perform(nums, key, (num, k) -> System.out.println(num / k));
+		} catch (ArithmeticException e) {
+			// TODO: handle exception
+			System.out.println("Arithmetic exception " + e.getLocalizedMessage());
+		}
 
 	}
 
 	private static void Perform(int[] arr, int key, BiConsumer<Integer, Integer> consumer) {
 
-		for (int i : arr) {
-			consumer.accept(i, key);
+		for (int num : arr) {
+			consumer.accept(num, key);
 		}
 	}
 }

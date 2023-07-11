@@ -11,7 +11,7 @@ class B extends A {
 	
 	@Override
 	public void show() {
-		super.show();
+//		super.show();
 		System.out.println("in B");
 	}
 }
@@ -19,8 +19,8 @@ class B extends A {
 public class Overriding {
 
 	public static void main(String[] args) {
-		A a1 = new A();
-		a1.show();
+//		A a1 = new A();
+//		a1.show();
 //
 		A a2 = new B();
 		a2.show();
